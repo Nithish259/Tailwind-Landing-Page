@@ -19,18 +19,10 @@
         </div>
         <div class="w-2/3 flex justify-around">
           <ul class="hidden md:flex gap-x-5 items-center font-bold text-sm">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Courses</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
           <div id="icons" class="flex gap-x-3 items-center">
             <i class="bx bx-shopping-bag"></i>
@@ -56,21 +48,12 @@
               <li class="text-white hover:font-bold">
                 <a href="#">homepage</a>
               </li>
-              <li class="text-white hover:font-bold">
-                <a href="#">login</a>
-              </li>
-              <li class="text-white hover:font-bold">
-                <a href="#">signup</a>
-              </li>
+              <li class="text-white hover:font-bold"><a href="#">login</a></li>
+              <li class="text-white hover:font-bold"><a href="#">signup</a></li>
               <li class="text-white hover:font-bold">
                 <a href="#">about me</a>
               </li>
-              <li class="text-white hover:font-bold">
-                <a href="#"></a>
-              </li>
-              <li class="text-white hover:font-bold">
-                <a href="#">works</a>
-              </li>
+              <li class="text-white hover:font-bold"><a href="#">works</a></li>
               <li class="text-white hover:font-bold">
                 <a href="#">contacts</a>
               </li>
@@ -78,49 +61,65 @@
           </div>
         </div>
       </nav>
+
+      <!-- HERO SECTION -->
       <div
         id="first-page-content"
-        class="relative w-full h-full overflow-hidden flex bg-gradient-to-tr from-[#7F56D9] to-[#083F9B]"
+        class="relative flex flex-col md:flex-row items-center md:items-stretch justify-center w-full overflow-hidden bg-gradient-to-tr from-[#7F56D9] to-[#083F9B] px-4 md:px-0"
       >
+        <!-- LEFT CONTENT -->
         <div
           id="left-content"
-          class="w-[550px] flex flex-col gap-y-6 py-[100px] px-[60px]"
+          class="w-full md:w-[550px] flex flex-col gap-y-6 py-[60px] md:py-[100px] px-4 md:px-[60px] text-center md:text-left"
         >
           <div id="content">
             <p class="text-sm text-gray-300 mb-3">
               Successful coaches are visionaries
             </p>
-            <h1 class="font-bold text-4xl text-white font-serif">
+            <h1
+              class="font-bold text-3xl md:text-4xl text-white font-serif leading-snug break-words"
+            >
               Good <span class="text-blue-500">coaching</span> is good teaching
               & nothing else.
             </h1>
           </div>
-          <div class="flex items-center gap-x-3 mt-2">
-            <button class="w-[200px] h-[40px] border-2 text-white rounded-md">
+
+          <div class="flex flex-col sm:flex-row items-center gap-3 mt-2">
+            <button
+              class="w-[180px] sm:w-[200px] h-[40px] border-2 text-white rounded-md"
+            >
               View Courses
             </button>
-            <a class="w-[200px] text-sm text-white" href="#"
+            <a class="text-sm text-white underline sm:no-underline" href="#"
               >Get Free Consultation</a
             >
           </div>
-          <div class="relative flex items-center">
+
+          <div class="relative flex items-center mt-4">
             <input
-              class="w-full p-3 text-sm rounded-md mt-4"
+              class="w-full p-3 text-sm rounded-md"
               type="text"
               placeholder="What do you want to learn today?"
             />
             <button
-              class="w-[80px] h-[30px] text-white text-sm rounded-md absolute bottom-2 right-1 bg-gradient-to-tr from-[#7F56D9] to-[#083F9B]"
+              class="absolute right-1 bottom-1 w-[80px] h-[30px] text-white text-sm rounded-md bg-gradient-to-tr from-[#7F56D9] to-[#083F9B]"
             >
               <i class="bx bx-search text-white"></i> Search
             </button>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
-          <div id="small-content" class="w-[400px] mb-[200px] p-3 flex">
+
+        <!-- MIDDLE SMALL CONTENT -->
+        <div
+          class="flex flex-col items-center justify-center md:justify-end mt-10 md:mt-0"
+        >
+          <div
+            id="small-content"
+            class="w-full sm:w-[350px] md:w-[400px] mb-[100px] md:mb-[200px] p-3 flex justify-center"
+          >
             <div
               id="line-property"
-              class="flex items-center gap-x-1 -rotate-90"
+              class="hidden md:flex items-center gap-x-1 -rotate-90"
             >
               <div class="w-[50px] h-[2px] bg-blue-500"></div>
               <div
@@ -130,77 +129,79 @@
               </div>
               <div class="w-[50px] h-[2px] bg-blue-500"></div>
             </div>
-            <div class="flex flex-col gap-y-2 w-[200px] mb-[10px]">
+            <div class="flex flex-col gap-y-2 w-[250px] md:w-[200px] mb-[10px]">
               <h1 class="text-white text-sm">Nithish</h1>
-              <p class="text-xs text-white">
+              <p class="text-xs text-white text-center md:text-left">
                 In a coaching role, you ask the questions and rely more on your
                 staff, who become the experts, to provide the information.
               </p>
             </div>
           </div>
-          <!-- <div id="curves" class="flex items-center border-gray-200">
-            <div
-              class="w-[300px] h-[200px] flex items-center border border-white border-opacity-40 rounded-full absolute -bottom-12 right-[450px] -rotate-90"
-            >
-              <div
-                class="w-[290px] h-[180px] flex items-center border-2 border-white border-dotted border-opacity-20 rounded-full"
-              >
-                <div
-                  class="w-[280px] h-[160px] border border-white border-opacity-40 rounded-full"
-                ></div>
-              </div>
-            </div>
-          </div> -->
         </div>
-        <div class="flex-1 flex justify-center items-end relative">
+
+        <div
+          class="flex-1 flex justify-center items-end relative mt-10 md:mt-0 overflow-visible"
+        >
           <img
             src="images/women-new-png.png"
-            class="w-[350px] md:w-[400px] h-auto md:h-[550px] pr-[20px] z-10"
+            class="w-[250px] sm:w-[300px] md:w-[400px] h-auto md:h-[550px] z-10"
             alt=""
           />
           <div
-            class="absolute bottom-0 right-0 w-[400px] h-[550px] bg-white/70 blur-3xl rounded-full"
+            class="hidden md:block absolute bottom-0 right-0 w-[400px] h-[550px] bg-white/70 blur-3xl rounded-full"
           ></div>
         </div>
       </div>
+
+      <!-- LOGO Content -->
       <div
-        class="w-full h-[100px] flex items-center justify-center gap-x-[100px] bg-gradient-to-b from-[#2E08C7] to-[#7E08C7] border-y-[1px]"
+        class="w-full h-auto md:h-[100px] flex flex-wrap md:flex-nowrap items-center justify-center gap-x-[50px] md:gap-x-[100px] gap-y-5 bg-gradient-to-b from-[#2E08C7] to-[#7E08C7] border-y-[1px] py-5 md:py-0"
       >
-        <img class="w-[80px] h-[25px]" src="images/spotify.png" alt="" />
-        <img class="w-[80px] h-[25px]" src="images/amazon.png" alt="" />
-        <img class="w-[80px] h-[25px]" src="images/spotify.png" alt="" />
-        <img class="w-[80px] h-[35px]" src="images/cisco.png" alt="" />
-        <img class="w-[80px] h-[25px]" src="images/logitech.png" alt="" />
-        <img class="w-[80px] h-[25px]" src="images/spotify.png" alt="" />
+        <img class="w-[70px] h-[25px]" src="images/spotify.png" alt="" />
+        <img class="w-[70px] h-[25px]" src="images/amazon.png" alt="" />
+        <img class="w-[70px] h-[25px]" src="images/spotify.png" alt="" />
+        <img class="w-[70px] h-[35px]" src="images/cisco.png" alt="" />
+        <img class="w-[70px] h-[25px]" src="images/logitech.png" alt="" />
+        <img class="w-[70px] h-[25px]" src="images/spotify.png" alt="" />
       </div>
     </section>
 
     <section
-      class="flex flex-col gap-y-[60px] w-full h-full bg-gradient-to-r from-[#D9ECFF] to-[#F0F3FF] py-[20px]"
+      class="flex flex-col gap-y-[60px] w-full h-full bg-gradient-to-r from-[#D9ECFF] to-[#F0F3FF] py-10 px-4 sm:px-6 md:px-10"
     >
+      <!-- Header -->
       <div
         id="header"
-        class="flex flex-col items-center justify-center mt-[30px]"
+        class="flex flex-col items-center justify-center mt-[30px] text-center px-3"
       >
-        <h1 class="font-bold">
+        <h1 class="font-semibold text-xl">
           Featured <span class="text-blue-500">Course</span>
         </h1>
-        <p class="uppercase text-gray-600 text-md">
+        <p class="uppercase text-gray-600 text-sm sm:text-md md:text-lg">
           The feature courses are we invented our teaching part
         </p>
       </div>
+
+      <!-- Card Container -->
       <div
         id="card-container"
-        class="w-full flex flex-wrap gap-y-[40px] gap-x-[40px] justify-center px-[100px]"
+        class="w-full flex flex-wrap justify-center gap-y-8 gap-x-6 sm:gap-x-10 md:gap-x-[40px] md:px-[50px] lg:px-[100px]"
       >
-        <div class="w-[250px] h-[250px] bg-white rounded-md">
-          <img class="w-full h-1/2" src="images/card1.png" alt="" />
+        <!-- Single Card -->
+        <div
+          class="w-[90%] sm:w-[250px] h-[250px] bg-white rounded-md shadow-md"
+        >
+          <img
+            class="w-full h-1/2 object-cover rounded-t-md"
+            src="images/card1.png"
+            alt=""
+          />
           <div class="flex flex-col gap-y-2 p-[10px]">
             <div class="flex items-center justify-between">
-              <p class="text-xs">1,957 Students</p>
-              <p class="text-xs">01h 59m</p>
+              <p class="text-xs sm:text-sm">1,957 Students</p>
+              <p class="text-xs sm:text-sm">01h 59m</p>
             </div>
-            <div class="text-sm">
+            <div class="text-sm sm:text-base">
               <h1>Motion Graphics: Create a Nice Typography Animation</h1>
             </div>
             <div class="flex items-center justify-between">
@@ -209,14 +210,21 @@
             </div>
           </div>
         </div>
-        <div class="w-[250px] h-[250px] bg-white rounded-md">
-          <img class="w-full h-1/2" src="images/card2.png" alt="" />
+
+        <div
+          class="w-[90%] sm:w-[250px] h-[250px] bg-white rounded-md shadow-md"
+        >
+          <img
+            class="w-full h-1/2 object-cover rounded-t-md"
+            src="images/card2.png"
+            alt=""
+          />
           <div class="flex flex-col gap-y-2 p-[10px]">
             <div class="flex items-center justify-between">
-              <p class="text-xs">9,575 Students</p>
-              <p class="text-xs">01h 59m</p>
+              <p class="text-xs sm:text-sm">9,575 Students</p>
+              <p class="text-xs sm:text-sm">01h 59m</p>
             </div>
-            <div class="text-sm">
+            <div class="text-sm sm:text-base">
               <h1>Advance PHP knowledge with JS to make smart web</h1>
             </div>
             <div class="flex items-center justify-between">
@@ -225,14 +233,21 @@
             </div>
           </div>
         </div>
-        <div class="w-[250px] h-[250px] bg-white rounded-md">
-          <img class="w-full h-1/2" src="images/card3.png" alt="" />
+
+        <div
+          class="w-[90%] sm:w-[250px] h-[250px] bg-white rounded-md shadow-md"
+        >
+          <img
+            class="w-full h-1/2 object-cover rounded-t-md"
+            src="images/card3.png"
+            alt=""
+          />
           <div class="flex flex-col gap-y-2 p-[10px]">
             <div class="flex items-center justify-between">
-              <p class="text-xs">2,957 Students</p>
-              <p class="text-xs">02h 49m</p>
+              <p class="text-xs sm:text-sm">2,957 Students</p>
+              <p class="text-xs sm:text-sm">02h 49m</p>
             </div>
-            <div class="text-sm">
+            <div class="text-sm sm:text-base">
               <h1>Education Software and PHP and JS System Script</h1>
             </div>
             <div class="flex items-center justify-between">
@@ -241,14 +256,21 @@
             </div>
           </div>
         </div>
-        <div class="w-[250px] h-[250px] bg-white rounded-md">
-          <img class="w-full h-1/2" src="images/crad4.png" alt="" />
+
+        <div
+          class="w-[90%] sm:w-[250px] h-[250px] bg-white rounded-md shadow-md"
+        >
+          <img
+            class="w-full h-1/2 object-cover rounded-t-md"
+            src="images/crad4.png"
+            alt=""
+          />
           <div class="flex flex-col gap-y-2 p-[10px]">
             <div class="flex items-center justify-between">
-              <p class="text-xs">5,457 Students</p>
-              <p class="text-xs">01h 59m</p>
+              <p class="text-xs sm:text-sm">5,457 Students</p>
+              <p class="text-xs sm:text-sm">01h 59m</p>
             </div>
-            <div class="text-sm">
+            <div class="text-sm sm:text-base">
               <h1>The Complete Financial Analyst Training & Investing</h1>
             </div>
             <div class="flex items-center justify-between">
@@ -257,14 +279,21 @@
             </div>
           </div>
         </div>
-        <div class="w-[250px] h-[250px] bg-white rounded-md">
-          <img class="w-full h-1/2" src="images/card5.png" alt="" />
+
+        <div
+          class="w-[90%] sm:w-[250px] h-[250px] bg-white rounded-md shadow-md"
+        >
+          <img
+            class="w-full h-1/2 object-cover rounded-t-md"
+            src="images/card5.png"
+            alt=""
+          />
           <div class="flex flex-col gap-y-2 p-[10px]">
             <div class="flex items-center justify-between">
-              <p class="text-xs">5,595 Students</p>
-              <p class="text-xs">01h 59m</p>
+              <p class="text-xs sm:text-sm">5,595 Students</p>
+              <p class="text-xs sm:text-sm">01h 59m</p>
             </div>
-            <div class="text-sm">
+            <div class="text-sm sm:text-base">
               <h1>Marketing 2023: Complete Guide To Instagram Growth</h1>
             </div>
             <div class="flex items-center justify-between">
@@ -273,14 +302,21 @@
             </div>
           </div>
         </div>
-        <div class="w-[250px] h-[250px] bg-white rounded-md">
-          <img class="w-full h-1/2" src="images/card6.png" alt="" />
+
+        <div
+          class="w-[90%] sm:w-[250px] h-[250px] bg-white rounded-md shadow-md"
+        >
+          <img
+            class="w-full h-1/2 object-cover rounded-t-md"
+            src="images/card6.png"
+            alt=""
+          />
           <div class="flex flex-col gap-y-2 p-[10px]">
             <div class="flex items-center justify-between">
-              <p class="text-xs">458 Students</p>
-              <p class="text-xs">03h 00m</p>
+              <p class="text-xs sm:text-sm">458 Students</p>
+              <p class="text-xs sm:text-sm">03h 00m</p>
             </div>
-            <div class="text-sm">
+            <div class="text-sm sm:text-base">
               <h1>Learn 3D Modelling and Design for Beginners</h1>
             </div>
             <div class="flex items-center justify-between">
@@ -290,9 +326,13 @@
           </div>
         </div>
       </div>
-      <div id="button-courses" class="flex justify-center text-xs text-white">
+
+      <div
+        id="button-courses"
+        class="flex justify-center text-xs sm:text-sm text-white"
+      >
         <button
-          class="w-[100px] h-[25px] bg-gradient-to-r from-[#083F9B] to-[#7F56D9] rounded-md"
+          class="w-[120px] sm:w-[150px] h-[30px] sm:h-[35px] bg-gradient-to-r from-[#083F9B] to-[#7F56D9] rounded-md"
         >
           Explore courses
         </button>
@@ -300,67 +340,106 @@
     </section>
 
     <section
-      class="w-full h-full bg-gradient-to-bl from-[#739FE8] to-[#4F18CA] relative py-[100px] text-center"
+      class="w-full min-h-screen bg-gradient-to-bl from-[#739FE8] to-[#4F18CA] relative py-16 sm:py-20 md:py-[100px] text-center overflow-hidden"
     >
+      <!-- Decorative Circular Border -->
       <div
-        class="flex items-center justify-center border border-white w-[600px] h-[200px] border-opacity-30 rounded-full absolute -left-[475px] top-[75px]"
+        class="hidden md:flex items-center justify-center border border-white border-opacity-30 w-[600px] h-[200px] rounded-full absolute -left-[475px] top-[75px]"
       >
         <div
           class="flex items-center justify-center border-2 border-white border-dashed border-opacity-30 w-[570px] h-[175px] rounded-full"
         >
           <div
-            class="border border-white w-[540px] h-[155px] border-opacity-30 rounded-full"
+            class="border border-white border-opacity-30 w-[540px] h-[155px] rounded-full"
           ></div>
         </div>
       </div>
+
+      <!-- Content Section -->
       <div
         id="placement-training"
-        class="flex flex-col gap-y-[90px] pt-[100px]"
+        class="flex flex-col gap-y-16 sm:gap-y-20 md:gap-y-[90px] pt-10 sm:pt-16 md:pt-[100px] px-6 sm:px-10 md:px-0"
       >
-        <div id="header" class="flex flex-col gap-y-2 text-center">
-          <h1 class="text-white text-2xl font-bold">
+        <!-- Header -->
+        <div
+          id="header"
+          class="flex flex-col gap-y-2 text-center max-w-2xl mx-auto"
+        >
+          <h1
+            class="text-white text-xl sm:text-2xl md:text-3xl font-bold leading-tight"
+          >
             Why <span class="text-blue-500">learn</span> with our courses?
           </h1>
-          <p class="text-sm text-white/40">
-            We are providing the best courses and top classes.And extradinery
-            placement training.....
+          <p class="text-xs sm:text-sm md:text-base text-white/60">
+            We provide the best courses and top classes — with extraordinary
+            placement training.
           </p>
         </div>
+
+        <!-- Icon Cards Grid -->
         <div
-          class="grid h-56 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4 px-[100px]"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4 sm:gap-x-8 md:gap-x-12 px-4 sm:px-10 md:px-[100px]"
         >
           <div
-            class="flex flex-col gap-y-1 row-span-1 justify-center items-center"
+            class="flex flex-col items-center justify-center gap-y-2 text-center"
           >
-            <img class="w-[30px] h-[30px]" src="images/Icon1.png" alt="" />
-            <h1 class="text-white">01. Learn</h1>
-            <p class="text-white text-xs text-center">
-              Learn continually. There is always “one more thing”to learn.
+            <img
+              class="w-8 h-8 sm:w-10 sm:h-10"
+              src="images/Icon1.png"
+              alt=""
+            />
+            <h1
+              class="text-white text-sm sm:text-base md:text-lg font-semibold"
+            >
+              01. Learn
+            </h1>
+            <p class="text-white text-xs sm:text-sm opacity-90 max-w-[200px]">
+              Learn continually. There is always “one more thing” to learn.
             </p>
           </div>
+
           <div
-            class="flex flex-col gap-y-1 relative row-span-1 justify-center items-center"
+            class="flex flex-col items-center justify-center gap-y-2 text-center relative"
           >
-            <img class="w-[30px] h-[30px]" src="images/Icon2.png" alt="" />
-            <h1 class="text-white">02. Graduate</h1>
-            <p class="text-white text-xs text-center">
-              Be bold,be courageous, be your best.
+            <img
+              class="w-8 h-8 sm:w-10 sm:h-10"
+              src="images/Icon2.png"
+              alt=""
+            />
+            <h1
+              class="text-white text-sm sm:text-base md:text-lg font-semibold"
+            >
+              02. Graduate
+            </h1>
+            <p class="text-white text-xs sm:text-sm opacity-90 max-w-[200px]">
+              Be bold, be courageous, be your best.
             </p>
+
+            <!-- Dotted Lines -->
             <div
-              class="w-[150px] h-[1px] absolute -left-[80px] top-1/2 border border-dashed border-opacity-10 -rotate-90"
+              class="hidden md:block w-[150px] h-[1px] absolute -left-[80px] top-1/2 border border-dashed border-opacity-10 -rotate-90"
             ></div>
             <div
-              class="w-[150px] h-[1px] absolute -right-[80px] top-1/2 border border-dashed border-opacity-10 -rotate-90"
+              class="hidden md:block w-[150px] h-[1px] absolute -right-[80px] top-1/2 border border-dashed border-opacity-10 -rotate-90"
             ></div>
           </div>
+
           <div
-            class="flex flex-col gap-y-1 row-span-1 justify-center items-center"
+            class="flex flex-col items-center justify-center gap-y-2 text-center"
           >
-            <img class="w-[30px] h-[30px]" src="images/Icon3.png" alt="" />
-            <h1 class="text-white">03. Work</h1>
-            <p class="text-white text-xs text-center">
-              Great companies are built in the office,with hard work put in by
-              team.
+            <img
+              class="w-8 h-8 sm:w-10 sm:h-10"
+              src="images/Icon3.png"
+              alt=""
+            />
+            <h1
+              class="text-white text-sm sm:text-base md:text-lg font-semibold"
+            >
+              03. Work
+            </h1>
+            <p class="text-white text-xs sm:text-sm opacity-90 max-w-[200px]">
+              Great companies are built in the office, with hard work put in by
+              the team.
             </p>
           </div>
         </div>
@@ -369,221 +448,213 @@
 
     <section
       id="categories"
-      class="w-full h-full flex flex-col gap-y-[40px] justify-center items-center bg-gradient-to-b from-[#D9ECFF] to-[#D9ECFF] p-20"
+      class="w-full flex flex-col gap-y-10 justify-center items-center bg-gradient-to-b from-[#D9ECFF] to-[#D9ECFF] py-16 px-6 sm:px-10 md:px-20"
     >
+      <!-- Header -->
       <div id="categories-header" class="text-center">
-        <h1 class="text-2xl text-black font-semibold">
+        <h1 class="text-xl text-black font-semibold">
           Top <span class="text-blue-500">Categories</span>
         </h1>
-        <p class="text-black text-xs font-medium">
+        <p class="text-black text-sm sm:text-base font-medium mt-2">
           100+ unique online course list designs
         </p>
       </div>
-      <div class="w-full h-[200px] grid grid-cols-6 gap-x-5 px-[100px]">
+
+      <!-- Grid -->
+      <div
+        class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5"
+      >
         <div
-          class="row-span-1/6 bg-white rounded-md p-[20px] flex flex-col justify-center items-center gap-y-5"
+          class="bg-white rounded-md p-5 flex flex-col justify-center items-center gap-y-3 shadow-md hover:shadow-lg transition-all duration-300"
         >
-          <img class="w-[50px] h-[50px]" src="images/category1.png" alt="" />
-          <h1 class="text-center font-semibold">Digital Marketing</h1>
-          <p class="text-xs font-medium">25 Courses</p>
+          <img
+            class="w-12 h-12 sm:w-14 sm:h-14"
+            src="images/category1.png"
+            alt=""
+          />
+          <h1 class="text-center font-semibold text-sm sm:text-base md:text-lg">
+            Digital Marketing
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-gray-600">25 Courses</p>
         </div>
+
         <div
-          class="row-span-1/6 bg-white rounded-md p-[20px] flex flex-col justify-center items-center gap-y-5"
+          class="bg-white rounded-md p-5 flex flex-col justify-center items-center gap-y-3 shadow-md hover:shadow-lg transition-all duration-300"
         >
-          <img class="w-[50px] h-[50px]" src="images/category2.png" alt="" />
-          <h1 class="text-center font-semibold">Web Development</h1>
-          <p class="text-xs font-medium">16 Courses</p>
+          <img
+            class="w-12 h-12 sm:w-14 sm:h-14"
+            src="images/category2.png"
+            alt=""
+          />
+          <h1 class="text-center font-semibold text-sm sm:text-base md:text-lg">
+            Web Development
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-gray-600">16 Courses</p>
         </div>
+
         <div
-          class="row-span-1/6 bg-white rounded-md p-[20px] flex flex-col justify-center items-center gap-y-5"
+          class="bg-white rounded-md p-5 flex flex-col justify-center items-center gap-y-3 shadow-md hover:shadow-lg transition-all duration-300"
         >
-          <img class="w-[50px] h-[50px]" src="images/category3.png" alt="" />
-          <h1 class="text-center font-semibold">Art & Humanities</h1>
-          <p class="text-xs font-medium">76 Courses</p>
+          <img
+            class="w-12 h-12 sm:w-14 sm:h-14"
+            src="images/category3.png"
+            alt=""
+          />
+          <h1 class="text-center font-semibold text-sm sm:text-base md:text-lg">
+            Art & Humanities
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-gray-600">76 Courses</p>
         </div>
+
         <div
-          class="row-span-1/6 bg-white rounded-md p-[20px] flex flex-col justify-center items-center gap-y-5"
+          class="bg-white rounded-md p-5 flex flex-col justify-center items-center gap-y-3 shadow-md hover:shadow-lg transition-all duration-300"
         >
-          <img class="w-[50px] h-[50px]" src="images/category4.png" alt="" />
-          <h1 class="text-center font-semibold">Personal Development</h1>
-          <p class="text-xs font-medium">22 Courses</p>
+          <img
+            class="w-12 h-12 sm:w-14 sm:h-14"
+            src="images/category4.png"
+            alt=""
+          />
+          <h1 class="text-center font-semibold text-sm sm:text-base md:text-lg">
+            Personal Development
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-gray-600">22 Courses</p>
         </div>
+
         <div
-          class="row-span-1/6 bg-white rounded-md p-[20px] flex flex-col justify-center items-center gap-y-5"
+          class="bg-white rounded-md p-5 flex flex-col justify-center items-center gap-y-3 shadow-md hover:shadow-lg transition-all duration-300"
         >
-          <img class="w-[50px] h-[50px]" src="images/category5.png" alt="" />
-          <h1 class="text-center font-semibold">IT and Software</h1>
-          <p class="text-xs font-medium">110 Courses</p>
+          <img
+            class="w-12 h-12 sm:w-14 sm:h-14"
+            src="images/category5.png"
+            alt=""
+          />
+          <h1 class="text-center font-semibold text-sm sm:text-base md:text-lg">
+            IT and Software
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-gray-600">
+            110 Courses
+          </p>
         </div>
+
         <div
-          class="row-span-1/6 bg-white rounded-md p-[20px] flex flex-col justify-center items-center gap-y-5"
+          class="bg-white rounded-md p-5 flex flex-col justify-center items-center gap-y-3 shadow-md hover:shadow-lg transition-all duration-300"
         >
-          <img class="w-[50px] h-[50px]" src="images/category6.png" alt="" />
-          <h1 class="text-center font-semibold">Graphic Design</h1>
-          <p class="text-xs font-medium">85 Courses</p>
+          <img
+            class="w-12 h-12 sm:w-14 sm:h-14"
+            src="images/category6.png"
+            alt=""
+          />
+          <h1 class="text-center font-semibold text-sm sm:text-base md:text-lg">
+            Graphic Design
+          </h1>
+          <p class="text-xs sm:text-sm font-medium text-gray-600">85 Courses</p>
         </div>
       </div>
     </section>
 
     <section
-      class="relative flex flex-col items-center justify-between w-full h-[600px] bg-white-100 pb-[40px]"
+      class="relative flex flex-col items-center justify-center w-full bg-white py-16 px-6 sm:px-10 md:px-20"
     >
+      <!-- Gradient Box -->
       <div
-        class="relative w-[800px] h-[250px] opacity-70 bg-gradient-to-r from-[#00B3FF] via-[#1901F8] to-[#E441FF] rounded-lg mt-[60px] flex items-center justify-between gap-x-3 px-[20px]"
+        class="relative w-full max-w-4xl bg-gradient-to-r from-[#00B3FF] via-[#1901F8] to-[#E441FF] rounded-xl flex flex-col md:flex-row items-center justify-between gap-6 p-6 sm:p-10 text-white opacity-70"
       >
-        <div class="h-[150px] w-[150px]">
-          <div class="h-1/3 w-full flex justify-start">
-            <img class="p-2" src="images/circleimg1.png" alt="" />
-          </div>
-          <div class="h-1/3 w-full flex justify-end">
-            <img class="p-2" src="images/circleimg2.png" alt="" />
-          </div>
-          <div class="h-1/3 w-full flex justify-start">
-            <img class="p-2" src="images/circleimg3.png" alt="" />
-          </div>
+        <!-- Left Circles -->
+        <div class="flex flex-col justify-between h-40 w-40">
+          <img class="p-2 w-12 sm:w-14" src="images/circleimg1.png" alt="" />
+          <img
+            class="p-2 w-12 sm:w-14 self-end"
+            src="images/circleimg2.png"
+            alt=""
+          />
+          <img class="p-2 w-12 sm:w-14" src="images/circleimg3.png" alt="" />
         </div>
-        <div class="relative flex flex-col items-center gap-y-5">
-          <div class="absolute -top-[20px]">
-            <img class="w-[30px] opacity-40" src="images/triangle.png" alt="" />
-          </div>
+
+        <!-- Center Content -->
+        <div class="flex flex-col items-center text-center gap-4 md:gap-5">
+          <img
+            class="w-8 opacity-40 hidden sm:block"
+            src="images/triangle.png"
+            alt=""
+          />
           <h1
-            class="text-white text-xl font-semibold w-[250px] text-center z-10"
+            class="text-lg sm:text-xl md:text-2xl font-semibold max-w-xs sm:max-w-sm"
           >
             Subscribe For Get Update Every New Courses
           </h1>
-          <p class="text-xs text-white font-light">
+          <p class="text-xs sm:text-sm font-light opacity-90 max-w-sm">
             20k+ students daily learn with Eduvi. Subscribe for new courses
           </p>
-          <div class="w-full h-[30px] relative">
+          <div class="relative w-full max-w-sm">
             <input
-              class="w-full h-[30px] mt-[10px] p-[10px] rounded-md opacity-40"
+              class="w-full h-10 px-3 pr-24 bg-gray-300/20 rounded-md text-black placeholder-white focus:outline-none"
               type="email"
               placeholder="Enter your email"
             />
             <button
-              class="absolute right-0 top-[10px] w-[80px] h-[30px] bg-blue-700 rounded-l-none rounded-md text-xs text-white"
+              class="absolute right-0 top-0 h-10 px-4 bg-blue-700 rounded-r-md text-xs sm:text-sm font-medium text-white hover:bg-blue-800 transition"
             >
               Subscribe
             </button>
           </div>
         </div>
-        <div class="h-[150px] w-[150px]">
-          <div class="h-1/3 w-full flex justify-end">
-            <img class="p-2" src="images/circleimg4.png" alt="" />
-          </div>
-          <div class="h-1/3 w-full flex justify-start">
-            <img class="p-2" src="images/circleimg5.png" alt="" />
-          </div>
-          <div class="h-1/3 w-full flex justify-end">
-            <img class="p-2" src="images/circleimg6.png" alt="" />
-          </div>
+
+        <!-- Right Circles -->
+        <div class="flex flex-col justify-between h-40 w-40">
+          <img
+            class="p-2 w-12 sm:w-14 self-end"
+            src="images/circleimg4.png"
+            alt=""
+          />
+          <img class="p-2 w-12 sm:w-14" src="images/circleimg5.png" alt="" />
+          <img
+            class="p-2 w-12 sm:w-14 self-end"
+            src="images/circleimg6.png"
+            alt=""
+          />
         </div>
-        <div class="absolute -left-[20px] -bottom-[20px]">
-          <img class="w-[40px] opacity-40" src="images/triangle.png" alt="" />
-        </div>
-      </div>
-      <div class="relative -mb-[200px]">
-        <img class="w-full h-[300px]" src="images/video.png" alt="" />
+
+        <!-- Bottom-left Triangle -->
         <img
-          class="w-[100px] absolute top-[110px] right-[190px]"
-          src="images/videoIcon.png"
+          class="absolute bottom-0 left-0 w-12 translate-y-1/2 -translate-x-1/2 opacity-60"
+          src="images/triangle.png"
           alt=""
         />
+      </div>
+
+      <!-- Decorative Triangle -->
+      <img
+        class="absolute right-10 md:right-24 top-1/3 w-12 hidden md:block"
+        src="images/triangle.png"
+        alt=""
+      />
+
+      <!-- Video Section -->
+      <div class="relative mt-40 w-full max-w-5xl">
         <img
-          class="w-[150px] absolute -bottom-[10px] -right-[80px]"
+          class="w-full h-auto rounded-lg"
+          src="images/video.png"
+          alt="Video thumbnail"
+        />
+
+        <!-- Play Button (centered) -->
+        <img
+          class="w-16 sm:w-24 absolute inset-0 m-auto"
+          src="images/videoIcon.png"
+          alt="Play Button"
+        />
+
+        <!-- Bottom Right Design (visible only on md+) -->
+        <img
+          class="w-24 sm:w-40 absolute -bottom-3 -right-10 opacity-80 hidden md:block"
           src="images/video-bottom-design.png"
           alt=""
         />
       </div>
-      <div class="absolute right-[150px] top-[380px]">
-        <img class="w-[40px]" src="images/triangle.png" alt="" />
-      </div>
     </section>
 
-    <!-- <section
-      class="flex flex-col justify-evenly w-screen h-[750px] bg-[#DBEDFF]"
-    >
-      <div
-        id="last-header"
-        class="relative flex flex-col items-center gap-y-[10px] pt-[250px]"
-      >
-        <div id="ellipse">
-          <img
-            class="absolute bottom-0 left-[100px] w-[70px]"
-            src="images/Ellipse.png"
-            alt=""
-          />
-        </div>
-        <h1 class="text-xl font-bold text-blue-500">Testimonials</h1>
-        <p class="text-xs font-semibold">What our student say about us</p>
-      </div>
-
-      <div id="review-container" class="flex -gap-x-1 justify-center pb-[80px]">
-        <div
-          class="relative bg-white shadow-xl w-[350px] h-[130px] flex flex-col gap-y-5 justify-center px-4"
-        >
-          <img
-            class="w-[25px] absolute -top-[15px] left-[170px]"
-            src="images/reviewcardimg.png"
-            alt=""
-          />
-          <p class="text-xs">
-            Such an amazing traniner and easily understand the entire syllabus,
-            and the guidence will be super and good to the way of explaning.
-          </p>
-          <div class="flex gap-x-1">
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bx-star opacity-40"></i>
-          </div>
-        </div>
-        <div
-          class="relative bg-white shadow-xl w-[350px] h-[130px] flex flex-col gap-y-5 justify-center px-4"
-        >
-          <img
-            class="w-[25px] absolute -top-[15px] left-[170px]"
-            src="images/reviewcardimg.png"
-            alt=""
-          />
-          <p class="text-xs">
-            Such an amazing traniner and easily understand the entire syllabus,
-            and the guidence will be super and good to the way of explaning.
-          </p>
-          <div class="flex gap-x-1">
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bx-star opacity-40"></i>
-          </div>
-        </div>
-        <div
-          class="relative bg-white shadow-xl w-[350px] h-[130px] flex flex-col gap-y-5 justify-center px-4"
-        >
-          <img
-            class="w-[25px] absolute -top-[15px] left-[170px]"
-            src="images/reviewcardimg.png"
-            alt=""
-          />
-          <p class="text-xs">
-            Such an amazing traniner and easily understand the entire syllabus,
-            and the guidence will be super and good to the way of explaning.
-          </p>
-          <div class="flex gap-x-1">
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bxs-star text-yellow-400"></i>
-            <i class="bx bx-star opacity-40"></i>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="bg-[#DBEDFF] py-[100px] w-full h-full">
-      <div class="relative text-center mb-20 pt-[250px]">
+    <section class="bg-[#DBEDFF] py-[80px] w-full h-full">
+      <div class="relative text-center mb-20 pt-[25px]">
         <div id="ellipse">
           <img
             class="absolute bottom-0 left-[5%] w-[50px]"
@@ -665,89 +736,125 @@
       </div>
     </section>
 
-    <footer class="w-full h-full bg-gradient-to-r from-[#931BBD] to-[#477AE3]">
-      <div class="flex justify-between w-full gap-3 p-5">
-        <div class="flex flex-col gap-y-2 p-4">
-          <h1 class="text-md font-semibold">Connect</h1>
+    <footer class="w-full bg-gradient-to-r from-[#931BBD] to-[#477AE3]">
+      <!-- Top section -->
+      <div
+        class="flex flex-col md:flex-row justify-between w-full gap-6 p-6 md:p-10"
+      >
+        <!-- Left -->
+        <div class="flex flex-col gap-y-2 md:w-1/4">
+          <h1 class="text-lg font-semibold">Connect</h1>
           <img
             class="w-[140px]"
             src="images/Askmeidentity_2-removebg-preview.png"
-            alt=""
+            alt="Askmeidentity Logo"
           />
-          <p class="w-[200px] text-xs font-medium">
-            Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony, Mailardevpally,
-            Nawab Saheb Kunta, Hyd, 500005
+          <p class="text-xs font-medium leading-relaxed break-words">
+            Sri Jagannath Nivas, 8-1-164/345/A/1, Pragati Colony,
+            Mailardevpally, Nawab Saheb Kunta, Hyd, 500005
           </p>
         </div>
-        <div class="flex gap-x-2 p-4">
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 md:w-3/4">
+          <!-- Classes -->
           <div class="flex flex-col gap-y-2">
             <h1 class="text-md font-semibold">Classes</h1>
-            <p class="w-[200px] text-xs font-medium">Classroom courses</p>
-            <p class="w-[200px] text-xs font-medium">
-              Virtual classroom courses
-            </p>
-            <p class="w-[200px] text-xs font-medium">E-learning courses</p>
-            <p class="w-[200px] text-xs font-medium">Video Courses</p>
-            <p class="w-[200px] text-xs font-medium">Offline Courses</p>
+            <p class="text-xs font-medium">Classroom courses</p>
+            <p class="text-xs font-medium">Virtual classroom courses</p>
+            <p class="text-xs font-medium">E-learning courses</p>
+            <p class="text-xs font-medium">Video Courses</p>
+            <p class="text-xs font-medium">Offline Courses</p>
           </div>
+
+          <!-- Community -->
           <div class="flex flex-col gap-y-2">
             <h1 class="text-md font-semibold">Community</h1>
-            <p class="w-[200px] text-xs font-medium">Learners</p>
-            <p class="w-[200px] text-xs font-medium">Parteners</p>
-            <p class="w-[200px] text-xs font-medium">Developers</p>
-            <p class="w-[200px] text-xs font-medium">Transactions</p>
-            <p class="w-[200px] text-xs font-medium">Blog</p>
+            <p class="text-xs font-medium">Learners</p>
+            <p class="text-xs font-medium">Partners</p>
+            <p class="text-xs font-medium">Developers</p>
+            <p class="text-xs font-medium">Transactions</p>
+            <p class="text-xs font-medium">Blog</p>
           </div>
+
+          <!-- Quick Links -->
           <div class="flex flex-col gap-y-2">
-            <h1 class="text-md font-semibold">Quick links</h1>
-            <p class="w-[200px] text-xs font-medium">Home</p>
-            <p class="w-[200px] text-xs font-medium">Professional Education</p>
-            <p class="w-[200px] text-xs font-medium">Courses</p>
-            <p class="w-[200px] text-xs font-medium">Admissions</p>
-            <p class="w-[200px] text-xs font-medium">Testimonial</p>
-            <p class="w-[200px] text-xs font-medium">Programs</p>
+            <h1 class="text-md font-semibold">Quick Links</h1>
+            <p class="text-xs font-medium">Home</p>
+            <p class="text-xs font-medium">Professional Education</p>
+            <p class="text-xs font-medium">Courses</p>
+            <p class="text-xs font-medium">Admissions</p>
+            <p class="text-xs font-medium">Testimonials</p>
+            <p class="text-xs font-medium">Programs</p>
           </div>
+
+          <!-- More -->
           <div class="flex flex-col gap-y-2">
             <h1 class="text-md font-semibold">More</h1>
-            <p class="w-[200px] text-xs font-medium">Press</p>
-            <p class="w-[200px] text-xs font-medium">Investors</p>
-            <p class="w-[200px] text-xs font-medium">Terms</p>
-            <p class="w-[200px] text-xs font-medium">Privacy</p>
-            <p class="w-[200px] text-xs font-medium">Help</p>
-            <p class="w-[200px] text-xs font-medium">Contact</p>
+            <p class="text-xs font-medium">Press</p>
+            <p class="text-xs font-medium">Investors</p>
+            <p class="text-xs font-medium">Terms</p>
+            <p class="text-xs font-medium">Privacy</p>
+            <p class="text-xs font-medium">Help</p>
+            <p class="text-xs font-medium">Contact</p>
           </div>
         </div>
       </div>
-      <div class="w-[1/2] bg-[#0351AE]/50 flex gap-5 justify-center p-4">
+
+      <!-- Social icons -->
+      <div class="bg-[#0351AE]/50 flex flex-wrap gap-4 justify-center p-4">
         <div
-          class="bg-white w-[25px] h-[25px] rounded-full flex justify-center items-center"
+          class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
         >
-          <img class="w-[20px] h-[20px]" src="images/Instagram.png" alt="" />
+          <img
+            class="w-[18px] h-[18px]"
+            src="images/Instagram.png"
+            alt="Instagram"
+          />
         </div>
         <div
-          class="bg-white w-[25px] h-[25px] rounded-full flex justify-center items-center"
+          class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
         >
-          <img class="w-[20px] h-[20px]" src="images/WhatsApp.png" alt="" />
+          <img
+            class="w-[18px] h-[18px]"
+            src="images/WhatsApp.png"
+            alt="WhatsApp"
+          />
         </div>
         <div
-          class="bg-white w-[25px] h-[25px] rounded-full flex justify-center items-center"
+          class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
         >
-          <img class="w-[20px] h-[20px]" src="images/Twitter.png" alt="" />
+          <img
+            class="w-[18px] h-[18px]"
+            src="images/Twitter.png"
+            alt="Twitter"
+          />
         </div>
         <div
-          class="bg-white w-[25px] h-[25px] rounded-full flex justify-center items-center"
+          class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
         >
-          <img class="w-[20px] h-[20px]" src="images/LinkedIn.png" alt="" />
+          <img
+            class="w-[18px] h-[18px]"
+            src="images/LinkedIn.png"
+            alt="LinkedIn"
+          />
         </div>
         <div
-          class="bg-white w-[25px] h-[25px] rounded-full flex justify-center items-center"
+          class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
         >
-          <img class="w-[20px] h-[20px]" src="images/YouTube.png" alt="" />
+          <img
+            class="w-[18px] h-[18px]"
+            src="images/YouTube.png"
+            alt="YouTube"
+          />
         </div>
       </div>
-      <div class="w-[1/2] bg-[#0351AE]/50 flex gap-5 justify-center">
-        <p class="text-white text-xs">
-          Copyright @ 2023 askmeidentity. All Rights Reserved
+
+      <!-- Copyright -->
+      <div
+        class="bg-[#0351AE]/50 flex justify-center items-center p-3 text-center"
+      >
+        <p class="text-xs font-medium">
+          © 2023 Askmeidentity. All Rights Reserved.
         </p>
       </div>
     </footer>
